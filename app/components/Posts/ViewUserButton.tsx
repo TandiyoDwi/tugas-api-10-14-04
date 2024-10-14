@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-interface ViewUserButtonProps {
-  userId: number;
+interface ViewUserButton {
+    userId:number
 }
 
 const ViewUserButton: React.FC<ViewUserButtonProps> = ({ userId }) => {
   const handleClick = () => {
     if (userId > 100) {
-      alert('tidak tawu');
+      alert('Info selanjutnya');
     } else {
-      alert('tau');
+      alert('Info selanjutnya');
     }
   };
   
   return (
     <>
-      <button onClick={handleClick}>test</button>
+      <button onClick={handleClick}>Info selanjutnya</button>
     </>
   );
 };
